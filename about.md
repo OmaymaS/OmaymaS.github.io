@@ -4,4 +4,4 @@ title: About Me
 permalink: /about/
 ---
 
-Electronics and Telecommunication engineer, interested in data science, machine learning and interdeciplinary projects.
+Electronics and telecommunication engineer, interested in data science, machine learning and interdisciplinary projects.
