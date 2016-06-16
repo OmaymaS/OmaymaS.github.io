@@ -7,5 +7,5 @@ title: Leverage and Influence Simplified
 
 Shiny App
  
-<iframe width="60%" src= "https://omaymas.shinyapps.io/Influence_Analysis/" frameborder="0" ></iframe>
+<iframe width="90%" src= "https://omaymas.shinyapps.io/Influence_Analysis/" frameborder="0" ></iframe>
 
