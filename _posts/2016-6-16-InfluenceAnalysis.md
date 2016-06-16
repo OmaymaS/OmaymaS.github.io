@@ -33,15 +33,15 @@ Y <- rnorm(n); Y<-Y-mean(Y)
 
 
 
-![](https://github.com/OmaymaS/OmaymaS.github.io/blob/master/images/2016-6-16-InfluenceAnalysis-imgs/Rplot_main.png)
-
-
+<img style="float: center;" src="../images/2016-6-16-InfluenceAnalysis-imgs/Rplot_main.png" width="420"> 
 
 Then we will zoom out and imagine a guy trying to pull the regression line, using a rope, towards him in different locations. Where will he have high potential for influence with the ablility to exert it? and where will he have high leverage but little effect on the fitted model?
 
 
 
-![](../images/2016-6-16-InfluenceAnalysis-imgs/Rplot_All_pivot3.png)
+<center>
+<img src="../images/2016-6-16-InfluenceAnalysis-imgs/Rplot_All_pivot3.png" width="420">
+</center>
 
 
 
