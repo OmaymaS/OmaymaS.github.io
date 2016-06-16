@@ -41,7 +41,7 @@ Then we will zoom out and imagine a guy trying to pull the regression line, usin
 
 
 
-![](https://github.com/OmaymaS/OmaymaS.github.io/blob/master/images/2016-6-16-InfluenceAnalysis-imgs/Rplot_All_pivot3.png)
+![](./images/2016-6-16-InfluenceAnalysis-imgs/Rplot_All_pivot3.png)
 
 
 
