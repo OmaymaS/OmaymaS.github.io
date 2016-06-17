@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Leverage and Influence Simplified
+title: Leverage and Influence in a Nutshell 
 ---
 
 
@@ -51,19 +51,19 @@ Y <- rnorm(n); Y<-Y-mean(Y)
 
 If you think of the regression line as a rod pivoted at the mean *(here [0,0] since X,Y are centered)*, you will be able to conclude the answers easily. For example:
 
-- At [10,0], the guy has high leverage since he stands far from the cloud of the X values. And although he has the potential of high influence, he will not be able to impact the regression line significantly because he exerts a force almost parallel to the line.
+- **At [10,0]**, the guy has high leverage since he stands far from the cloud of the X values. And although he has the potential of high influence, he will not be able to impact the regression line significantly because his force is exerted almost parallel to the line.
 
-- At [10,10], he has both high leverage and high influence, since he stands far from the rest of the observations in X and Y. So he will affect the intercept and the slope of the regression line significantly. 
+- **At [10,10]**, he has both high leverage and high influence, since he stands far from the rest of the observations in X and Y. So he will affect the intercept and the slope of the regression line significantly. 
 
-- At [0,-10], he will not have noticable effect on the fitted line. Since he pulls the line towards him at the pivot, the exerted force is almost perpendicular to the line, and consequently will have no influence. 
+- **At [0,-10]**, he will not have noticable effect on the fitted line. Since he pulls the line towards him at the pivot, the exerted force is almost perpendicular to the line, and consequently will have no influence. 
 
-What if the guy moves to another location?. Now, it should be easy for you to expect whether he is influential or not, following the same way of thinking. If you till need more exaples, you can use the following app to adjust different values.
+What if the guy moves to another location?. Now, it should be easy for you to expect whether he will be influential or not, following the same way of thinking. If you still need more examples, you can try the following Shiny app to adjust different values and check the outcome.
 
 
 ## Shiny App
 
 
-Here you can pick a point and it will be prepended to the 100 points generated earlier. Then you can see how the regression line is affected and how the influence measures change.
+This simple Shiny app demonstrates the concepts of leverage and influence, displays the linear model coefficients and some of the influence measures. You can pick a point and it will be prepended to the 100 points generated earlier. Then you can see how the regression line is affected and how the diplayed values change.
 
 
 
