@@ -4,7 +4,7 @@ title: Leverage and Influence in a Nutshell
 ---
 
 
-One of the common practices in regression models is performing diagnostics checks. They are usually carried out to check several aspects such as residuals, influential observations and outliers. Here we will focus on two concepts **(leverage and influence)**, but we will not get deep into the math behind them. We will try to visualize and catch the intuition behind them. We will also use a simple Shiny App to demonstrate the concept. And if you get the idea with a simple linear regression model, it will be easy to extend it to more complex ones. 
+Once upon a data, there were outliers and influential observations in regression models. A common practice is to perform diagnostics checks to dig deeper and see how different points affect the fitted model or its coeffecients . Here we will focus on two concepts **(leverage and influence)**, but we will not get deep into the math behind them. We will try to visualize and catch the intuition behind them first. We will also use a simple Shiny App to demonstrate the concept. And if you get the idea with a simple linear regression model, it will be easy to extend it to more complex ones. 
 
 
 
@@ -63,7 +63,7 @@ What if the guy moves to another location?. Now, it should be easy for you to ex
 ## Shiny App
 
 
-This simple Shiny app demonstrates the concepts of leverage and influence, displays the linear model coefficients and some of the influence measures. You can pick a point and it will be prepended to the 100 points generated earlier. Then you can see how the regression line is affected and how the diplayed values change.
+This simple Shiny App demonstrates the concepts of leverage and influence, displays the linear model coefficients and some of the influence measures for a point with adjustable coordinates. This point is prepended to the 100 points generated earlier. Then you can see how the regression line is affected and how the diplayed values change.
 
 
 
@@ -72,4 +72,17 @@ This simple Shiny app demonstrates the concepts of leverage and influence, displ
 
 
 <iframe  src= "https://omaymas.shinyapps.io/Influence_Analysis/"  style="border: none; width: 900px; height: 840px" ></iframe>
+
+## Influence Measure
+
+Now we got the intuitive explanation of the leverage and influence, but for multivariable regression or more complex models it is not easy to compare the model to mechanical system. That is why we use influence measures that we can calculate in R easily. The following are the measure of concern in for our discussion. However, there are more values that are used in diagnostic analysis.
+
+- *hatvalues* : indicates the potential for leverge.
+
+- *dfbetas* : measures how much individual coefficients change when the *i<sub>th</sub>* value is deleted. We have dfbtea for each coefficient, so for example, in our linear regression model we have one for the intercept and one for the slope.
+
+These values, and the rest of the influence measures, can be plotted versus the indecies of the observations to spot any extreme values and see the variations.
+
+Now you can play more with the Shiny App and make sure you understand how the displayed values change
+
 
