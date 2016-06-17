@@ -4,7 +4,7 @@ title: Leverage and Influence in a Nutshell
 ---
 
 
-Once upon a data, there were outliers and influential observations in regression models. As we started to use these models, we learnt that a common practice was to perform diagnostics checks to dig deeper and see how different points affect the fitted model or its coeffecients. So here we willfocus on two concepts **(leverage and influence)**, but we will not get deep into the math behind them. We will try to visualize and catch the intuition behind them first. We will also use a simple Shiny App to demonstrate the concept. And if you get the idea with a simple linear regression model, it will be easy to extend it to more complex ones. 
+**Once upon a data**, there were outliers and influential observations in regression models. As we started to use these models, we learnt that a common practice was to perform diagnostics checks to dig deeper and see how different points affect the fitted model or its coeffecients. So here we will focus on two concepts **(leverage and influence)**, but we will not get deep into the math behind them. We will try to visualize and catch the intuition behind them first. We will also use a simple Shiny App to demonstrate the concept. And if you get the idea with a simple linear regression model, it will be easy to extend it to more complex ones. 
 
 
 
