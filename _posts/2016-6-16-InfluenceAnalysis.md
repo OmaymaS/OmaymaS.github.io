@@ -15,12 +15,16 @@ One of the common practices in regression models is performing diagnostics check
 **Leverage** is a measure of how far an observation on the predictor variable *(X in our case)* from the mean of the predictor variable. To understand it, let's imagine a beam pivoted at a fixed hinge. The higher the leverage value of an observation, the more potential it has to impact the fitted model. This depends on how it conforms to the fitted model.
 
 
-
-We can read this everywhere, but to get the concept easily, let's look at the following example. First, we will simulate 100 points and plot the regression line as follows:
-
+We can read this everywhere, but to get the concept easily, let's look at the following example.
 
 
-```
+## Intuition Behind Influential Observations
+
+**First** , we will simulate 100 points and plot the regression line as follows:
+
+
+
+```{r}
 
 set.seed(1523);
 
@@ -33,9 +37,9 @@ Y <- rnorm(n); Y<-Y-mean(Y)
 
 
 
-<img style="float: center;" src="../images/2016-6-16-InfluenceAnalysis-imgs/Rplot_main.png" width="420"> 
+<center><img  src="../images/2016-6-16-InfluenceAnalysis-imgs/Rplot_main.png" width="420"></center>
 
-Then we will zoom out and imagine a guy trying to pull the regression line, using a rope, towards him in different locations. Where will he have high potential for influence with the ablility to exert it? and where will he have high leverage but little effect on the fitted model?
+**Then** we will zoom out and imagine a guy trying to pull the regression line, using a rope towards him. If he moves in different locations, where will he have high potential for influence with the ablility to exert it? and where will he have high leverage but little effect on the fitted model?
 
 
 
@@ -45,8 +49,15 @@ Then we will zoom out and imagine a guy trying to pull the regression line, usin
 
 
 
-If you think of the regression line as a rod pivoted at the mean *(here [0,0] since X,Y are centered)*, you will be able to conclude the answers easily. For example, the guy at [10,0] has high leverage since he stands far from the cloud of the X values. And although he has the potential of high influence, he will not be able to impact the regression line significantly because he exerts a force almost parallel to the line. On the other hand, the guy at [10,10] has both high leverage and high influence, since he stands far from the rest of the observations in X and Y. So he will affect the intercept and the slope of the regression line significantly. Following the same way of thinking about other points, you can conclude that the guy at [0,-10] will not have noticable effect on the fitted line. Since he pulls the line towards him at the pivot, the exerted force will no influence. What about any other guy who stands anywhere else? now it should be easy for you to expect whether he is influential or not.
+If you think of the regression line as a rod pivoted at the mean *(here [0,0] since X,Y are centered)*, you will be able to conclude the answers easily. For example:
 
+- At [10,0], the guy has high leverage since he stands far from the cloud of the X values. And although he has the potential of high influence, he will not be able to impact the regression line significantly because he exerts a force almost parallel to the line.
+
+- At [10,10], he has both high leverage and high influence, since he stands far from the rest of the observations in X and Y. So he will affect the intercept and the slope of the regression line significantly. 
+
+- At [0,-10], he will not have noticable effect on the fitted line. Since he pulls the line towards him at the pivot, the exerted force is almost perpendicular to the line, and consequently will have no influence. 
+
+What if the guy moves to another location?. Now, it should be easy for you to expect whether he is influential or not, following the same way of thinking. If you till need more exaples, you can use the following app to adjust different values.
 
 
 ## Shiny App
@@ -60,5 +71,5 @@ Here you can pick a point and it will be prepended to the 100 points generated e
 
 
 
-<iframe  src= "https://omaymas.shinyapps.io/Influence_Analysis/"  style="border: none; width: 900px; height: 800px" ></iframe>
+<iframe  src= "https://omaymas.shinyapps.io/Influence_Analysis/"  style="border: none; width: 900px; height: 840px" ></iframe>
 
