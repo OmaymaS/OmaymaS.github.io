@@ -8,7 +8,7 @@ Once upon a data, there were outliers and influential observations in regression
 
 
 
-## Leverage and Influence
+## Leverage Definition
 
 
 
@@ -75,7 +75,7 @@ This simple Shiny App demonstrates the concepts of leverage and influence, displ
 
 ## Influence Measure
 
-Now we got the intuitive explanation of the leverage and influence, but for multivariable regression or more complex models it is not easy to compare the model to mechanical system. That is why we use influence measures that we can calculate in R easily. The following are the measure of concern in for our discussion. However, there are more values that are used in diagnostic analysis.
+Now we got the intuitive explanation of the leverage and influence, but for multivariable regression or more complex models it is not easy to compare the model to mechanical system. That is why we use influence measures that we can calculate in R easily. The following are the measure we are interested in here. However, there are more values that are used in diagnostic analysis.
 
 - *hatvalues* : indicates the potential for leverge.
 
@@ -83,6 +83,6 @@ Now we got the intuitive explanation of the leverage and influence, but for mult
 
 These values, and the rest of the influence measures, can be plotted versus the indecies of the observations to spot any extreme values and see the variations.
 
-Now you can play more with the Shiny App and make sure you understand how the displayed values change
+Now you can play more with the Shiny App to make sure your understanding of the displayed values goes with the intuition behind them.
 
 
