@@ -4,7 +4,9 @@ title: Leverage and Influence in a Nutshell
 ---
 
 
-**Once upon a data**, there were outliers and influential observations in regression models. Using these models, we learnt that a common practice was to perform diagnostics checks to dig deeper and see how different points affect the fitted model or its coeffecients. So here we will focus on two concepts **(leverage and influence)**, but we will not get deep into the math behind them. We will try to visualize and catch the intuition behind them first. We will also use a simple Shiny App to demonstrate the concept. And if you get the idea with a simple linear regression model, it will be easy to extend it to more complex ones. 
+**Once upon a data**, there were outliers and influential observations in regression models. Using these models, we learnt that a common practice was to perform diagnostics checks to dig deeper and see how different points affect the fitted model or its coeffecients. So here we go! 
+
+In this post, we will focus on two concepts **(leverage and influence)**, but we will not dig deep into the math behind them. We will try to visualize and catch the intuition behind them first. We will also use a simple Shiny App to demonstrate the concept. And if you get the idea with a simple linear regression model, it will be easy to extend it to more complex ones. 
 
 
 
@@ -12,7 +14,7 @@ title: Leverage and Influence in a Nutshell
 
 
 
-**Leverage** is a measure of how far an observation on the predictor variable *(X in our case)* from the mean of the predictor variable. To understand it, let's imagine a beam pivoted at a fixed hinge. The higher the leverage value of an observation, the more potential it has to impact the fitted model. This depends on how it conforms to the fitted model.
+**Leverage** is a measure of how far an observation on the predictor variable *(Let it be X)* from the mean of the predictor variable. To understand it, let's imagine a beam pivoted at a fixed hinge. The higher the leverage value of an observation, the more potential it has to impact the fitted model. This depends on how it conforms to the fitted model.
 
 
 We can read this everywhere, but to get the concept easily, let's look at the following example.
@@ -75,7 +77,7 @@ This simple Shiny App demonstrates the concepts of leverage and influence, displ
 
 ## Influence Measure
 
-Now we got the intuitive explanation of the leverage and influence, but for multivariable regression or more complex models it is not easy to compare the model to mechanical system. That is why we use influence measures that we can calculate in R easily. The following are the measure we are interested in here. However, there are more values that are used in diagnostic analysis.
+Now we got the intuitive explanation of the leverage and influence, but for multivariable regression or more complex models it is not easy to compare the model to mechanical system. That is why we use influence measures that can be calculated in R easily. The following are the measures we are interested in here. However, there are more values that are used in diagnostic analysis.
 
 - *hatvalues* : indicates the potential for leverage.
 
@@ -84,5 +86,7 @@ Now we got the intuitive explanation of the leverage and influence, but for mult
 These values, and the rest of the influence measures, can be plotted versus the indecies of the observations to spot any extreme values and see the variations.
 
 Now you can play more with the Shiny App to make sure your understanding of the displayed values goes with the intuition behind them.
+
+<sub>*(If you face any difficulty viewing the Shiny App, you can find it in a Github repo [here](https://github.com/OmaymaS/ShinyApp-Leverage-and-Influence-Demo))*</sub>
 
 
