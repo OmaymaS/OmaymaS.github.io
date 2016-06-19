@@ -46,6 +46,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 30px;
+  
   a {
     color: inherit;
   }
@@ -154,13 +155,13 @@ img {
   //margin-bottom: 50px;
   //background-color: #097380;
   margin-bottom: 40px;
-  background-color: #4F95B6;
+  background-color: #1F99B6;
   border-bottom: 1px solid #ddd;
 }
 
 .masthead {
   padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
+ //border-bottom: 1px solid $lightGray;
 
   @include mobile {
     text-align: center;
@@ -196,10 +197,10 @@ img {
 
 .site-name {
   margin: 0;
-  color: $darkGray;
+  color: $white;
   cursor: pointer;
   font-family: $helveticaNeue;
-  font-weight: 300;
+  font-weight: bold;
   font-size: 28px;
   letter-spacing: 1px;
 }
@@ -229,7 +230,7 @@ nav {
 
   a {
     margin-left: 20px;
-    color: $darkGray;
+    color: $white;
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
