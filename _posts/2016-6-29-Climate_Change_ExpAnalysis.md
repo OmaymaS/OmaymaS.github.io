@@ -143,7 +143,7 @@ cmodels_details<-cmodels %>%
 
 #### R.squared (Linear Model)
 
-Now if we arrange the new dataframe by the value of $R^2$, we can see that the highest value is around 0.75 for Jakarta in May.
+Now if we arrange the new dataframe by the value of **R^2**, we can see that the highest value is around 0.75 for Jakarta in May.
 
 
 ```
@@ -159,7 +159,7 @@ Source: local data frame [6 x 4]
 6 Surabaya Indonesia    10 0.6463481
 ```
 
-And if we look at the distribution of the values of $R^2$ in the following histogram, we will find that most of the values are very low and few values are higher than 0.6. This indicates that a linear model is not the best one to describe the change in our data. Consequently, interpreting the coefficients will not be indicative. And this goes with the nature of the data, which have high variations and fluctuations.
+And if we look at the distribution of the values of **R^2** in the following histogram, we will find that most of the values are very low and few values are higher than 0.6. This indicates that a linear model is not the best one to describe the change in our data. Consequently, interpreting the coefficients will not be indicative. And this goes with the nature of the data, which have high variations and fluctuations.
 
 
 <center><img src="..\images\2016-6-29-Climate_Change_ExpAnalysis\unnamed-chunk-9-1.png"></center>
