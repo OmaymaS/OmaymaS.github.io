@@ -19,8 +19,10 @@ html {
 
 body {
 	background: $white;
-  font: 18px/1.4 $helvetica;
-  color: $darkGray;
+  	font: 18px/1.4 $helvetica;
+	//font: 18px/1.4 ;
+	//font-family: "PT Serif",serif;
+  	color: $darkGray;
 }
 
 .container {
@@ -46,6 +48,8 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 30px;
+//font-family: National;
+
   
   a {
     color: inherit;
@@ -67,6 +71,7 @@ h4 {
 
 p {
   margin: 15px 0;
+ font-family: "PT Serif";
 }
 
 a {
@@ -142,6 +147,19 @@ img {
 .clearfix:after {
     clear: both;
 }
+
+
+/*
+ * Equations with KaTeX
+ * Center the equation content.
+ */
+.equation {
+  padding-bottom:  1rem;
+  padding-top:     1rem;
+  //text-align:      center;
+  font-size:       1.1em;
+}
+
 
 /*********************/
 /* LAYOUT / SECTIONS */
