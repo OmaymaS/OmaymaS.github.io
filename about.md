@@ -4,7 +4,7 @@ title: About Me
 permalink: /about/
 ---
 
-Electronics and telecommunication engineer, interested in data science, machine learning and interdisciplinary projects.
+A Data Scientists, originally an Electronics and Telecommunication engineer.
 
 A fan of [r-bloggers](http://www.r-bloggers.com)
 
