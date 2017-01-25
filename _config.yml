@@ -15,6 +15,7 @@ avatar: https://avatars3.githubusercontent.com/u/13340411?v=3&s=460
 # Flags below are optional
 #
 
+
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
@@ -27,7 +28,7 @@ footer-links:
   pinterest:
   rss: Once-Upon-A-Data
   twitter: #
-  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
+  stackoverflow: "users/6535741/omaymas"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
 
