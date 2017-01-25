@@ -4,7 +4,7 @@ title: A Glimpse into The Daily Life of a Data Scientist
 ---
 
 
-A couple of weeks ago, I had a discussion with a product manager regarding a project I was involved in, I felt that there was no clear understanding of the daily challenges data scientists face. Few days later, I was at Rstudio::Conf 2017 where I met lots of data scientists from academia and industry. Later on, I described one of the conference's positive side effects as "group therapy", where one could see how others face the same challenges and struggle with similar issues. So it was like a personal sanity check!
+A couple of weeks ago, I had a discussion with a co-worker regarding a project I was involved in, I felt that there was no clear understanding of the daily challenges data scientists face. Few days later, I was at Rstudio::Conf 2017 where I met lots of data scientists from academia and industry. Later on, I described one of the conference's positive side effects as "group therapy", where one could see how others face the same challenges and struggle with similar issues. So it was like a personal sanity check!
 
 When I came back to work, I decided to share with other teams more details about my daily work to help them understand the nature of my job, set their expectations and avoid conflicts. So I sent them a shorter version of the following. 
 
