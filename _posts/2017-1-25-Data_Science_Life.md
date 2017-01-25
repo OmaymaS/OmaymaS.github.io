@@ -137,7 +137,7 @@ It might be surprising that people keep developing packages in different languag
 <td width="50%"></td>
 </tr>
 <tr>
-<td width="50%" align="right"><i>Hadley Wickam, <br>
+<td width="50%" align="right"><i>Hadley Wickham, <br>
 Chief Scientist at RStudio</i></td>
 <td width="50%"></td>
 </tr>
