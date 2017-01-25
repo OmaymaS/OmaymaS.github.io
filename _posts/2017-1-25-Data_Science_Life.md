@@ -271,7 +271,7 @@ Hilary Parker also grouped the most common issues under the previous three point
 <center>
 <figure>
 <img src="../images/2017-1-25-Data_Scientist_Life/3-hp1.png" width="80%">
-<figcaption><i>Opinionated Analysis Development, Hilary Parker-Slide 57
+<figcaption><i>Opinionated Analysis Development, Hilary Parker-Slide 25
 <a href="http://www.slideshare.net/hilaryparker/opinionated-analysis-development">[7]</a></i></figcaption>
 </figure>
 </center>
